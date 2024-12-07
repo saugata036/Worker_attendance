@@ -1,0 +1,73 @@
+.cardBox:hover {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.landPage {
+  height: 80%;
+}
+.LandHeading {
+  font-family: "Apercu";
+  font-weight: 600;
+  font-size: 3rem;
+}
+.LandSubHeading {
+  font-family: "Apercu";
+  font-weight: 400;
+}
+.landHeight {
+  height: calc(100vh - 80px);
+
+  overflow-y: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.mainHead {
+  /* margin-top: 50px; */
+}
+@media (max-height: 600px) {
+  .mainHeading {
+    margin-top: 100px;
+  }
+}
+@media (max-width: 500px) {
+  .landPage {
+    height: 100%;
+  }
+  .LandHeading {
+    font-size: 1.5rem;
+  }
+  .LandSubHeading {
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+    padding-left: 8px;
+
+    /* display: none; */
+  }
+  .landHeight {
+    height: calc(100vh - 90px);
+    overflow-y: scroll;
+  }
+
+  .Heading {
+    margin-top: 200px;
+  }
+}
+
+.cards {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  row-gap: 2rem;
+  column-gap: 5rem;
+  height: 100%;
+  /* margin-top: 100px; */
+}
+
+@media (min-width: 1300px) {
+  .Heading {
+    margin-top: 200px;
+  }
+}

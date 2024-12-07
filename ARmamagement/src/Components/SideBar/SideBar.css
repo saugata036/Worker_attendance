@@ -1,0 +1,64 @@
+.wework-hover-animation {
+  display: inline-block;
+  position: relative;
+  color: black;
+}
+.active {
+  background-color: rgb(75, 23, 216);
+  color: white;
+  padding: 10px;
+  padding-top: 5px;
+  border-radius: 10px;
+  height: max-content;
+}
+
+.wework-hover-animation::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.wework-hover-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.sidebar-width {
+  width: 15%;
+}
+
+.sidebar-overflow {
+  overflow-y: scroll;
+}
+.sidebar-overflow::-webkit-scrollbar {
+  scrollbar-width: none;
+  background: transparent;
+}
+
+.nav-text-size {
+  font-size: 20px;
+}
+.navGap {
+  row-gap: 15px;
+}
+@media (max-height: 600px) {
+  .nav-text-size {
+    font-size: 15px;
+  }
+  .navGap {
+    row-gap: 3px;
+  }
+}
+.flexgap {
+  row-gap: 5px;
+}
+.asset-button {
+  color: #2463ebff;
+  font-weight: 900;
+}

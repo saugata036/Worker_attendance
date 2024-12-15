@@ -15,11 +15,11 @@ const CustomerSerface = () => {
       name: "Customer Update",
       link: "customerupdate",
     },
-    {
-      id: 3,
-      name: "Customer Billing",
-      link: "customerbilling",
-    },
+    // {
+    //   id: 3,
+    //   name: "Customer Billing",
+    //   link: "customerbilling",
+    // },
   ];
   return (
     <div

@@ -47,6 +47,7 @@ const DailyAttendance = () => {
       );
 
       setRows(workerList);
+      console.log("dalaiy data",workerList)
 
       localStorage.setItem(`attendance_${DATE}`, JSON.stringify(workerList));
     } catch (error) {

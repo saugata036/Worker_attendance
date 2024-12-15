@@ -14,8 +14,8 @@ import {
 } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import ForgotPassword from "./ForgotPassword";
-import FacebookSharpIcon from "@mui/icons-material/FacebookSharp";
-import GoogleIcon from "@mui/icons-material/Google";
+// import FacebookSharpIcon from "@mui/icons-material/FacebookSharp";
+// import GoogleIcon from "@mui/icons-material/Google";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import { toast, ToastContainer } from "react-toastify";
@@ -103,7 +103,7 @@ const Login = () => {
         toast.success("Log in successful! Redirecting to Landing page ");
         setTimeout(() => {
           toast.info("Redirecting to landing page...");
-          navigate("/landingpage");
+          navigate("/a");
         }, 2000);
       }
     } catch (error: any) {
@@ -164,7 +164,7 @@ const Login = () => {
           <FormControl>
             <Box sx={{ display: "flex", justifyContent: "space-between" }}>
               <FormLabel htmlFor="password">Password</FormLabel>
-              <Link
+              {/* <Link
                 component="button"
                 type="button"
                 onClick={() => setOpen(true)}
@@ -172,7 +172,7 @@ const Login = () => {
                 sx={{ alignSelf: "baseline" }}
               >
                 Forgot your password?
-              </Link>
+              </Link> */}
             </Box>
             <TextField
               value={password}
@@ -208,7 +208,7 @@ const Login = () => {
           </Typography>
         </Box>
         <Divider>or</Divider>
-        <Box sx={{ display: "flex", flexDirection: "column", gap: 2 }}>
+        {/* <Box sx={{ display: "flex", flexDirection: "column", gap: 2 }}>
           <Button
             fullWidth
             variant="outlined"
@@ -225,7 +225,7 @@ const Login = () => {
           >
             Sign in with Facebook
           </Button>
-        </Box>
+        </Box> */}
       </Card>
     </>
   );

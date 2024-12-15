@@ -2,37 +2,35 @@ import Box from "@mui/material/Box";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
 
-import AutoFixHighRoundedIcon from "@mui/icons-material/AutoFixHighRounded";
-import ConstructionRoundedIcon from "@mui/icons-material/ConstructionRounded";
-import SettingsSuggestRoundedIcon from "@mui/icons-material/SettingsSuggestRounded";
-import ThumbUpAltRoundedIcon from "@mui/icons-material/ThumbUpAltRounded";
-
-// import { SitemarkIcon } from './CustomIcons';
+import AccessTimeRoundedIcon from "@mui/icons-material/AccessTimeRounded";
+import BarChartRoundedIcon from "@mui/icons-material/BarChartRounded";
+import CheckCircleRoundedIcon from "@mui/icons-material/CheckCircleRounded";
+import SecurityRoundedIcon from "@mui/icons-material/SecurityRounded";
 
 const items = [
   {
-    icon: <SettingsSuggestRoundedIcon sx={{ color: "text.secondary" }} />,
-    title: "Adaptable performance",
+    icon: <AccessTimeRoundedIcon sx={{ color: "text.secondary" }} />,
+    title: "Real-Time Attendance Tracking",
     description:
-      "Our product effortlessly adjusts to your needs, boosting efficiency and simplifying your tasks.",
+      "Monitor and manage attendance records as they happen, ensuring up-to-date insights at all times.",
   },
   {
-    icon: <ConstructionRoundedIcon sx={{ color: "text.secondary" }} />,
-    title: "Built to last",
+    icon: <CheckCircleRoundedIcon sx={{ color: "text.secondary" }} />,
+    title: "Accurate Record Keeping",
     description:
-      "Experience unmatched durability that goes above and beyond with lasting investment.",
+      "Ensure precise and reliable record management, reducing errors and improving efficiency.",
   },
   {
-    icon: <ThumbUpAltRoundedIcon sx={{ color: "text.secondary" }} />,
-    title: "Great user experience",
+    icon: <BarChartRoundedIcon sx={{ color: "text.secondary" }} />,
+    title: "Comprehensive Reporting",
     description:
-      "Integrate our product into your routine with an intuitive and easy-to-use interface.",
+      "Generate detailed reports to analyze attendance trends and performance metrics effortlessly.",
   },
   {
-    icon: <AutoFixHighRoundedIcon sx={{ color: "text.secondary" }} />,
-    title: "Innovative functionality",
+    icon: <SecurityRoundedIcon sx={{ color: "text.secondary" }} />,
+    title: "Secure Data Management",
     description:
-      "Stay ahead with features that set new standards, addressing your evolving needs better than the rest.",
+      "Safeguard sensitive attendance data with robust security measures and compliance standards.",
   },
 ];
 
@@ -44,10 +42,16 @@ const LoginPageContent = () => {
         alignSelf: "center",
         gap: 4,
         maxWidth: 450,
+        padding: 3,
+        backgroundColor: "background.paper",
+        borderRadius: 2,
+        boxShadow: 3,
       }}
     >
       <Box sx={{ display: { xs: "none", md: "flex" } }}>
-        {/* <SitemarkIcon /> */}
+        <Typography variant="h5" sx={{ fontWeight: "bold", color: "primary.main" }}>
+          Attendance Management System
+        </Typography>
       </Box>
       {items.map((item, index) => (
         <Stack key={index} direction="row" sx={{ gap: 2 }}>

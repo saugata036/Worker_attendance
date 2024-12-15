@@ -15,8 +15,8 @@ import Typography from "@mui/material/Typography";
 import Stack from "@mui/material/Stack";
 import MuiCard from "@mui/material/Card";
 import { styled } from "@mui/material/styles";
-import FacebookSharpIcon from "@mui/icons-material/FacebookSharp";
-import GoogleIcon from "@mui/icons-material/Google";
+// import FacebookSharpIcon from "@mui/icons-material/FacebookSharp";
+// import GoogleIcon from "@mui/icons-material/Google";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
@@ -230,7 +230,7 @@ const SignUp = () => {
             <Typography sx={{ color: "text.secondary" }}>or</Typography>
           </Divider>
           <Box sx={{ display: "flex", flexDirection: "column", gap: 2 }}>
-            <Button fullWidth variant="outlined" startIcon={<GoogleIcon />}>
+            {/* <Button fullWidth variant="outlined" startIcon={<GoogleIcon />}>
               Sign up with Google
             </Button>
             <Button
@@ -239,7 +239,7 @@ const SignUp = () => {
               startIcon={<FacebookSharpIcon />}
             >
               Sign up with Facebook
-            </Button>
+            </Button> */}
             <Typography sx={{ textAlign: "center" }}>
               Already have an account?{" "}
               <Link href="/signin" variant="body2" sx={{ alignSelf: "center" }}>

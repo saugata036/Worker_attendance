@@ -119,7 +119,7 @@ const DailyAttendance = () => {
         payload
       );
 
-      // Remove previous dates' data from localStorage
+      
       Object.keys(localStorage).forEach((key) => {
         if (
           key.startsWith("attendance_") &&

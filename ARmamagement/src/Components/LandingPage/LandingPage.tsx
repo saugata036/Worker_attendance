@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import { AspectRatio, Card, CardContent, Typography } from "@mui/joy";
 import "./LandingPage.css";
+import employee from '../../assets/employee.png';
+import customer from '../../assets/customer.jpeg'
 const LandingPage = () => {
   return (
     <div className="flex flex-col w-screen mainHead landHeight  items-center fixed px-5 overflow-y-scroll ">
@@ -21,7 +23,7 @@ const LandingPage = () => {
         >
           <Card sx={{ width: 320, height: 280 }}>
             <AspectRatio minHeight="120px" maxHeight="200px">
-              <img src={""} loading="lazy" alt="" />
+              <img src={employee} loading="lazy" alt="" />
             </AspectRatio>
             <div>
               <Typography level="title-lg">
@@ -38,7 +40,7 @@ const LandingPage = () => {
 
         {/* service 2 */}
 
-        <Link
+        {/* <Link
           // to="/a/analytics"
           to={"/a"}
           style={{
@@ -61,7 +63,7 @@ const LandingPage = () => {
               </Typography>
             </CardContent>
           </Card>
-        </Link>
+        </Link> */}
 
         {/* service 3 */}
 
@@ -73,7 +75,7 @@ const LandingPage = () => {
         >
           <Card sx={{ width: 320, height: 280 }}>
             <AspectRatio minHeight="120px" maxHeight="200px">
-              <img src={""} loading="lazy" alt="" />
+              <img src={customer} loading="lazy" alt="" />
             </AspectRatio>
             <div>
               <Typography level="title-lg">Customer</Typography>
